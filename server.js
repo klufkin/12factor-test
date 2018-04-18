@@ -9,7 +9,6 @@ app.set('view engine', 'pug'); // we use the engine pug, mustache or EJS work gr
 
 // add static file server middleware
 app.use(express.static(__dirname + '/public'));
-
 app.use((req, res, next) => {
   next();
 });
